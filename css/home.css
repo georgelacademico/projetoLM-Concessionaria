@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+main {
+    background: url(/assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5%;
+    height: 55vh;
+    text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: black;
+}
+
+main h1 {
+    font-weight: bold;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+    padding-top: 5rem;
+    color: white;
+}
+
+main h2 {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 1px black;
+}
+
+main button {
+    background-color: #392d62;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 0.5rem;
+    color: white;
+    font-size: 2rem;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: white;
+    color: #392d62;
+    border: 1px solid #392d62;
+}
+
+main ul {
+    list-style-type: none;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    cursor: pointer;
+}
+
+main ul li {
+    margin: 1rem;
+    text-decoration: underline;
+    color: white;
+}
+
+main ul li a:hover {
+    background-color: #392d62;
+    color: white;
+    border-radius: 8px;
+}
+
+main ul li:visited {
+  color: white;
+}
+
+.cards {
+    display: flex;
+    background-color: #f1f1f1;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid white;
+    height: 25vh;
+}
+
+.venda, .compra, .aluguel {
+    margin: auto;
+    width: 20%;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 8px;
+}
+
+.venda:hover, .compra:hover, .aluguel:hover {
+    color: white;
+    background-color: #392d62;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    height: 16.6vh;
+    padding-top: 1rem;
+    border-radius: 8px 8px 0 0;
+}
+
+footer .fa-facebook, .fa-instagram, .fa-twitter {
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: darkblue;
+}
+
+.fa-instagram:hover {
+    color: pink;
+}
+
+.fa-twitter:hover {
+    color: lightskyblue;
+}
+
+@media screen and (max-width: 414px) {
+    body {
+        display: block;
+        max-width: 414px;
+    }
+
+    main h1 {
+        font-size: 3rem;
+        padding-top: 2rem;
+    }
+
+    main button {
+        font-size: 1.5rem;
+        margin-top: 2.5rem;
+    }
+
+    main ul {
+        display: block;
+    }
+
+    .cards {
+        display: block;
+        width: 90%;
+        border: #f1f1f1;
+    }
+
+    .venda, .compra, .aluguel {
+        width: 90%;
+        padding: 0.5rem;
+    }
+
+    footer {
+      margin-top: 19rem;
+      padding-top: 1rem;
+      height: 18.7vh;
+    }
+}

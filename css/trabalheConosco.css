@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1f1f1;
+}
+
+/* ------------------- Header ------------------------*/
+
+header {
+  background-color: #392d62;
+  display: block;
+}
+
+header h1 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem;
+  color: white;
+  text-shadow: 1px 1px 2px gray;
+  font-weight: bold;
+  text-transform: uppercase;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+header ul {
+  display: flex;
+  padding: 5px;
+  margin-bottom: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+header li a, header li a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+header li a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------- Main -----------------------*/
+
+.trabalheConoscoPage {
+  margin: 2rem;
+}
+
+.trabalheConosco, .nossasVagas, .nossosProgramas {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.sobreNossaEmpresa, .saibaMais, .forms {
+  text-align: left;
+  margin-right: 3rem;
+}
+
+.trabalheConosco h2, .nossasVagas h2, .nossosProgramas h2, .sobreNossaEmpresa h3 {
+  padding-top: 2rem;
+}
+
+.trabalheConosco h4 {
+  font-weight: 400;
+  margin-top: 5rem;
+}
+
+.trabalheConosco img, .nossasVagas img, .nossosProgramas img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.6fr;
+  grid-template-rows: repeat(4, auto);
+  gap: 2rem 2rem;
+  text-align: center;
+}
+
+.trabalheConosco {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.nossasVagas {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.nossosProgramas {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+.sobreNossaEmpresa {
+  grid-column: 3/3;
+  grid-row: 1/1;
+}
+
+.forms {
+  grid-column: 3/3;
+  grid-row: 2/2;
+}
+
+.saibaMais {
+  grid-column: 3/3;
+  grid-row: 3/3;
+}
+
+.nossosProgramas p {
+  text-align: left;
+}
+
+.nossosProgramas a {
+  float: right;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.forms label {
+  font-weight: bold;
+}
+
+/* ---------- Estilização dos botões ------------*/
+
+.btnBancoTalentos {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btnBancoTalentos a, .nossasVagasLinks a, .nossosProgramasLinks a, .forms a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  background-color: #392d62;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.btnBancoTalentos a:visited, .nossasVagasLinks a:visited, .nossosProgramasLinks a:visited, .forms a:visited {
+  color: white;
+  background-color: #392d62;
+}
+
+.btnBancoTalentos a:hover, .nossasVagasLinks a:hover, .nossosProgramasLinks a:hover, .forms a:hover {
+  color: black;
+  background-color:white;
+  border: 1px solid #392d62;
+}
+
+.nossasVagasLinks, .nossosProgramasLinks p {
+  text-align: left;
+  margin-left: 8rem;
+  font-weight: bold;
+}
+
+.nossasVagasLinks a, .nossosProgramasLinks a {
+  float: right;
+  margin-right: 8rem;
+  font-weight: 400;
+}
+
+.forms a {
+  margin-top: 1rem;
+}
+
+.saibaMais a {
+  text-decoration: none;
+}
+
+.saibaMais a:visited {
+  color: black;
+}
+
+.saibaMais a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------- Footer ---------------------- */
+
+footer {
+  background-color: black;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: .8rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.fa-facebook, .fa-instagram, .fa-twitter {
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.fa-facebook:hover {
+  color: darkblue;
+}
+
+.fa-instagram:hover {
+  color: pink;
+}
+
+.fa-twitter:hover {
+  color: lightskyblue;
+}
+
+footer h6 {
+  padding: 0.5rem;
+}
+
+/*---------------- Responsividade ------------------*/
+
+@media screen and (max-width: 768px) {
+
+  .trabalheConosco, .nossasVagas, .nossosProgramas, .sobreNossaEmpresa, .saibaMais, .forms {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+  }
+  
+  .trabalheConosco img, .nossasVagas img, .nossosProgramas img {
+    width: 80%;
+  }
+
+  .nossasVagasLinks a, .nossosProgramasLinks a {
+    border-radius: 8px;
+    padding: 5px;
+  }
+
+  .forms a {
+    margin-top: 1rem;
+  }
+  
+  .container-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(6, auto);
+    gap: 3rem;
+  }
+
+  .trabalheConosco {
+    grid-column: 1/2;
+    grid-row: 1/1;
+  }
+
+  .nossasVagas {
+    grid-column: 1/2;
+    grid-row: 2/2;
+  }
+
+  .nossosProgramas {
+    grid-column: 1/2;
+    grid-row: 3/3;
+  }
+
+  .sobreNossaEmpresa {
+    grid-column: 1/2;
+    grid-row: 4/4;
+  }
+
+  .saibaMais {
+    grid-column: 1/2;
+    grid-row: 5/5;
+  }
+
+  .forms {
+    grid-column: 1/2;
+    grid-row: 6/6;
+  }
+}
+
+/*@media screen and (max-width: 425px) {
+  .nossasVagas a, .nossosProgramas a{
+    float: none;
+    box-sizing: border-box;
+    width: 50%;
+    margin-top: 0.5rem;
+    align-content: center;
+  }
+}*/
